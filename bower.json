@@ -1,0 +1,21 @@
+{
+  "name": "game-of-life",
+  "description": "A game of life interpretation made with PHP",
+  "main": "index.php",
+  "authors": [
+    "andyexeter"
+  ],
+  "license": "http://www.gnu.org/licenses/gpl-2.0.html",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.3"
+  }
+}

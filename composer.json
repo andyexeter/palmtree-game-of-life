@@ -1,0 +1,25 @@
+{
+  "name": "andyexeter/game-of-life",
+  "description": "A game of life interpretation made with PHP",
+  "type": "project",
+  "license": "GPL2",
+  "require": {
+    "pear/console_table": "^1.3",
+    "cboden/ratchet": "^0.3.5"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.6",
+    "wp-coding-standards/wpcs": "2014-12-11"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+      "vendor/bin/phpcs --config-set default_standard WordPress-Extra"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Palmtree\\": "src/Palmtree/"
+    }
+  }
+}
